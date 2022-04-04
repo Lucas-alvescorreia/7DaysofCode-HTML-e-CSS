@@ -1,0 +1,142 @@
+:root {
+  --text-color: #667085;
+  --main-color: #8e2424;
+  --title-color: #101828;
+  --bg-vaga: rgba(142, 36, 36);
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+nav img {
+  margin-right: -7rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.links a {
+  text-decoration: none;
+  color: var(--text-color);
+  margin: 0 1rem;
+}
+
+button {
+  padding: 11px;
+  border-radius: 0.5rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.cadastro {
+  color: #ffffff;
+  background: var(--main-color);
+}
+
+.cabecalho {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 6.5rem 0;
+  gap: 1rem;
+}
+
+.cabecalho span {
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+.cabecalho h1 {
+  font-size: 2.5rem;
+  color: var(--title-color);
+}
+
+.cabecalho p {
+  max-width: 50%;
+  color: var(--text-color);
+}
+
+.metricas-container {
+  display: flex;
+  flex-direction: row;
+  padding: 0 8rem 5rem;
+  gap: 1rem;
+}
+
+.metricas-container div {
+  width: 25%;
+}
+
+.metricas-container h4 {
+  font-size: 1.2rem;
+  align-items: center;
+}
+
+.metricas-container span {
+  color: var(--main-color);
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+.metricas-container p {
+  color: var(--text-color);
+  line-height: 1rem;
+}
+
+.metricas-container h4,
+span,
+p {
+  margin-bottom: 0.5rem;
+}
+
+.vagas-container {
+  padding: 7rem 8rem 5rem;
+}
+
+.talentos {
+  text-align: center;
+  align-items: center;
+}
+
+.talentos span {
+  color: var(--main-color);
+  background: rgba(142, 36, 36, 5%);
+  padding: 0.2rem 0.7rem;
+  border-radius: 1rem;
+  font-weight: 500;
+}
+
+.talentos h2 {
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+.talentos p {
+  color: var(--text-color);
+  font-size: 1.2rem;
+  /* line-height: 0.5rem; */
+}
+
+.talentos img {
+  width: 100%;
+  margin: 2.5rem auto;
+}
