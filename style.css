@@ -2,7 +2,10 @@
   --text-color: #667085;
   --main-color: #8e2424;
   --title-color: #101828;
-  --bg-vaga: rgba(142, 36, 36);
+  --bg-vaga: rgba(142, 36, 36, 10%);
+  --cont-vaga: #eaecf0;
+  --bg-footer: #f9fafb;
+  --text-footer: #98a2b3;
 }
 
 * {
@@ -35,8 +38,13 @@ nav {
   margin: 0 1rem;
 }
 
+.links a:hover {
+  color: var(--main-color);
+  font-weight: bold;
+}
+
 button {
-  padding: 11px;
+  padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   border: none;
   background: none;
@@ -46,9 +54,14 @@ button {
   font-size: 0.9rem;
 }
 
+.entrar:hover {
+  background: var(--bg-vaga);
+}
+
 .cadastro {
   color: #ffffff;
   background: var(--main-color);
+  padding: 0.5rem 1rem;
 }
 
 .cabecalho {
@@ -109,7 +122,7 @@ p {
 }
 
 .vagas-container {
-  padding: 7rem 8rem 5rem;
+  padding: 7rem 8rem 3rem;
 }
 
 .talentos {
@@ -119,7 +132,7 @@ p {
 
 .talentos span {
   color: var(--main-color);
-  background: rgba(142, 36, 36, 10%);
+  background: var(--bg-vaga);
   padding: 0.2rem 0.7rem;
   border-radius: 1rem;
   font-weight: 500;
@@ -133,10 +146,111 @@ p {
 .talentos p {
   color: var(--text-color);
   font-size: 1.2rem;
-  /* line-height: 0.5rem; */
 }
 
 .talentos img {
   width: 100%;
   margin: 2.5rem auto;
+}
+
+.vagas-abertas {
+  padding-left: 19%;
+}
+
+.vagas-abertas h1 {
+  font-size: 19.2px;
+  padding: 2rem 0;
+  font-weight: 500;
+}
+
+.vaga {
+  border: var(--cont-vaga) solid 1px;
+  border-radius: 16px;
+  padding: 1.5rem;
+  width: 78%;
+  display: grid;
+  margin-bottom: 1.2rem;
+}
+
+.titulo-vaga {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.informacoes span {
+  color: var(--text-color);
+  font-size: 15px;
+  font-weight: 500;
+  padding-right: 1rem;
+}
+
+.depoimento {
+  padding: 0 8rem 5rem;
+}
+
+.depoimento-container {
+  background: var(--bg-vaga);
+  padding: 3rem;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+.depoimento-colaborador p {
+  color: var(--main-color);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.depoimento-colaborador h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.colaborador-perfil img {
+  margin: 2rem 0 1rem;
+}
+
+.colaborador-perfil p {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.colaborador-perfil span {
+  color: var(--text-color);
+  font-size: 14px;
+}
+
+footer {
+  text-align: center;
+  background: var(--bg-footer);
+  padding: 5rem;
+}
+
+.email-cadastro h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.email-cadastro p {
+  color: var(--text-color);
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.input-cadastro {
+  align-items: center;
+}
+
+.input-cadastro input {
+  padding: 0.5rem 1rem;
+  width: 22.5rem;
+  border: var(--cont-vaga) solid 1px;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.copyright {
+  font-size: 0.9rem;
+  color: var(--text-footer);
 }
