@@ -119,7 +119,7 @@ p {
 
 .talentos span {
   color: var(--main-color);
-  background: rgba(142, 36, 36, 5%);
+  background: rgba(142, 36, 36, 10%);
   padding: 0.2rem 0.7rem;
   border-radius: 1rem;
   font-weight: 500;
